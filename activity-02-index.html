@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optmize image bandwidth with srcset</title>
+  
+  <style>
+
+    /* Resets */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    nav ul {
+      list-style-type: none;
+
+      padding-left: 0;
+      margin: 0;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro');
+
+    /* Font */
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Making it visible. */
+    img {
+      border: 1px solid black;
+
+      /* Minimal responsiveness */
+      max-width: 100%;
+    }
+
+    /* Making it pretty. */
+    body {
+      font-size: clamp(18px, 4vw, 32px);
+    }
+
+    main, footer {
+      width: 80vw;
+      max-width: 95ch;
+      margin: 1rem auto;
+    }
+    
+  </style>
+
+  
+
+</head>
+<body>
+  <main>
+    <h1>Pictures</h1>
+    <p class="tag-line">No image optimization</p>
+    <article>
+      <h2>01 - First Image</h2>
+      <img src="./images/Source-sm/018.jpg" alt="" srcset="./images/Source-sm/018.jpg 500w,
+                                                           ./images/Source-md/018.jpg 750w,
+                                                           ./images/Source-md/018.jpg 750w 2x,
+                                                           ./images/Source-lg/018.jpg 1000w">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, animi dolore! Illo sequi pariatur id, dolor, unde explicabo omnis nisi quasi eum alias veniam ab!</p>
+    </article>
+    <article>
+      <h2>02 - Second Image</h2>
+      <img src="./images/Source-lg/10733980_10152800262881739_4495535368909137002_n.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, animi dolore! Illo sequi pariatur id, dolor, unde explicabo omnis nisi quasi eum alias veniam ab!</p>
+    </article>
+    <article>
+      <h2>03 - Third Image</h2>
+      <img src="./images/Source-lg/11208650_10152737098861739_2608302645887763751_n.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, animi dolore! Illo sequi pariatur id, dolor, unde explicabo omnis nisi quasi eum alias veniam ab!</p>
+    </article>
+    <article>
+      <h2>04 - Fourth Image</h2>
+      <img src="./images/Source-lg/11215709_10152790439386739_7763820884839230370_n.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, animi dolore! Illo sequi pariatur id, dolor, unde explicabo omnis nisi quasi eum alias veniam ab!</p>
+    </article>
+    <article>
+      <h2>05 - Fifth Image</h2>
+      <img src="./images/Source-lg/15233823_10153853644851739_1756420556_o.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, animi dolore! Illo sequi pariatur id, dolor, unde explicabo omnis nisi quasi eum alias veniam ab!</p>
+    </article>
+  </main>
+</body>
+
+</html>
